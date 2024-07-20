@@ -1,0 +1,134 @@
+.header {
+    background-color: white;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin: 0;
+    font-family: "Merriweather", serif;
+    position: fixed;
+}
+
+#name {
+    display: flex;
+    align-items: center;
+    float: right;
+    margin: 0 2%;
+}
+
+#name h3 {
+    color: black;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+#name img {
+    height: 50px;
+    width: 50px;
+    padding: 5px 3px;
+}
+
+#options {
+    flex-grow: 1;
+    float: right;
+    margin: 0 0%;
+    /* height: 45px; */
+    align-self: center;
+}
+
+#options ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+#options ul li {
+    display: inline-block;
+    font-size: 15px;
+    margin: 0 10px;
+}
+
+#options ul a {
+    text-decoration: none;
+    color: black;
+}
+
+#options ul li:hover a {
+    font-weight: 800;
+}
+
+#click  {
+    font-weight: 600;
+    border-bottom-style: solid;
+    padding-bottom: 0.5px;
+    }
+
+#book {
+    display: flex;
+    align-items: center;
+    float: left;
+    margin: 0 8dvw;
+}
+
+#book button {
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    width: 150px;
+    background-color: #fc772f;
+    border-radius: 15px 3px 15px 3px;
+}
+@media only screen and (max-width: 1000px){
+    #options{
+    width:200px;
+    }
+
+}
+@media only screen and (max-width: 767px) {
+    /* #name h3 {
+        align-self:self-end;
+    } */
+    #name{
+        flex-direction: column;
+        width: 30%;
+    }
+    #options {
+        width: 100%;
+        padding:0;
+        height: fit-content;
+        order:1;
+    }
+    #options ul{
+        justify-content: center;
+    }
+    #options ul li {
+        font-size: 16px;
+        margin: 0;
+        padding: 0 5dvw 0.5px 5dvw;
+        width:fit-content;
+    }
+    #book button {
+       justify-content: flex-end;
+       /* align-items: flex-end; */
+       padding-left: 20%;
+    }
+    .header {
+        align-content: center;
+        flex-direction: unset;
+        padding: 10px;
+        width: 100dvw;
+        margin: 0%;
+        justify-content: flex-start;
+        align-items: end;
+        height: 20dvh;
+        /* flex-wrap: wrap; */
+    }
+}

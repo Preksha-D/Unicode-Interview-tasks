@@ -1,3 +1,14 @@
+body{
+    background-color: white;
+    margin:0;
+    height: 100%;
+    width: 100%;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .header {
     background-color: white;
     width:100%;
@@ -9,6 +20,12 @@
     margin: 0;
     font-family: "Merriweather", serif;
     position: fixed;
+    z-index: 6;
+}
+html{
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
 }
 
 #name {
@@ -16,6 +33,7 @@
     align-items: center;
     float: right;
     margin: 0 2%;
+    flex-direction: row;
 }
 
 #name h3 {
@@ -34,7 +52,6 @@
     flex-grow: 1;
     float: right;
     margin: 0 0%;
-    /* height: 45px; */
     align-self: center;
 }
 
@@ -85,6 +102,10 @@
     width: 150px;
     background-color: #fc772f;
     border-radius: 15px 3px 15px 3px;
+    display: block;
+}
+#book :hover{
+    box-shadow: 5px 5px 5px #5E7797;
 }
 @media only screen and (max-width: 1000px){
     #options{
@@ -93,18 +114,15 @@
 
 }
 @media only screen and (max-width: 767px) {
-    /* #name h3 {
-        align-self:self-end;
-    } */
-    #name{
-        flex-direction: column;
-        width: 30%;
-    }
     #options {
         width: 100%;
         padding:0;
         height: fit-content;
         order:1;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+        flex:2;
     }
     #options ul{
         justify-content: center;
@@ -112,23 +130,22 @@
     #options ul li {
         font-size: 16px;
         margin: 0;
-        padding: 0 5dvw 0.5px 5dvw;
+        padding: 0 5dvw;
         width:fit-content;
     }
-    #book button {
-       justify-content: flex-end;
-       /* align-items: flex-end; */
-       padding-left: 20%;
-    }
     .header {
-        align-content: center;
-        flex-direction: unset;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
         padding: 10px;
-        width: 100dvw;
-        margin: 0%;
-        justify-content: flex-start;
-        align-items: end;
-        height: 20dvh;
-        /* flex-wrap: wrap; */
+        height: auto;
+    }
+    #book{
+        margin-left: auto;
+    }
+    #name{
+        flex-direction: column;
+        margin: 0;
+        width: fit-content;
     }
 }

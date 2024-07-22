@@ -1,0 +1,159 @@
+
+.page{
+    width:100%;
+    height: 100%;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    font-family: "Merriweather", serif;
+    align-items: center;
+}
+.text{
+    padding: 5% 0;
+    display:flex;
+    flex-direction: column;
+    justify-self: center;
+    flex-wrap: wrap;
+    width: 55dvw;
+}
+.text h3{
+    font-size: 40px;
+    float: left;
+    width: 40dvw;
+    display:flex;
+    align-self: flex-start;
+    text-align: left;
+    padding-bottom: 8px;
+    padding-left: 15dvw;
+}
+.text p{
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    width:38dvw;
+    text-align: left;
+    align-self: flex-start;
+    margin: 0;
+    line-height: 25px;
+    padding-left: 15vw;
+    padding-bottom: 5%;
+}
+.points{
+    display: flex;
+    flex-direction: row;
+
+}
+.list{
+    margin: 0;
+    list-style-type: none;
+}
+.list li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 30px;
+    width: 90%;
+}
+    
+.list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 70%;
+    width: 30px;
+    height: 30px;
+    background-image: url('Pictures/tick.png');
+    background-size: contain;
+    transform: translateY(-70%);
+}
+#list1{
+     padding-left: 15dvw; 
+
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    padding-left: 15dvw;
+    padding-top: 3dvh;
+    width: fit-content;
+    flex-wrap: wrap;
+
+}
+#menu-button button {
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    width: 150px;
+    background-color: #000000;
+    border-radius: 15px 3px 15px 3px;
+    margin: 0 20px 20px 0;
+    display: block;
+}
+#menu-button :hover{
+    box-shadow: 5px 5px 5px #5E7797;
+}
+#book1 button {
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    width: 150px;
+    background-color: #fc772f;
+    border-radius: 15px 3px 15px 3px;
+    display: block;
+}
+#book1 :hover{
+    box-shadow: 5px 5px 5px #5E7797;
+}
+.photo{
+    width:50%;
+}
+.photo img{
+    width:300px;
+    height: 450px;
+    margin: 5% 0 0 18%;
+    align-items: center;
+    border-radius: 30px 13px 30px 13px;
+}
+@media only screen and (max-width: 1000px){
+    .points{
+        flex-wrap: wrap;
+    }
+    .list, #list1, .text p, .btn{
+        padding-left: 10vw;
+    }
+    .text h3{
+        padding-left: 10vw;
+        font-size: 35px;
+        flex-wrap: wrap;
+    }
+    .page{
+        padding-top: 20%;
+        justify-content: space-between;
+        content: box;
+        overflow: scroll;
+    }
+    .photo img{
+        margin: 0 auto;
+        display: block;
+    }
+}
+@media only screen and (max-width: 767px){
+    
+    .text h3{
+        padding-left: 8vw;
+        width:100%;
+    }
+    .list, #list1, .text p, .btn{
+        padding-left: 8vw;
+    }
+}
+
+    

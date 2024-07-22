@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reviews</title>
+    <title>Restaurant UI</title>
+    <link rel="icon" href="Pictures/pizza-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="review.css" />
+<link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-    <p>Reviews</p>
+    <nav class="header">
+        <div id=name>
+            <img src="Pictures/pizza-logo.png">
+            <h3>Restaurant</h3>
+        </div>
+        <div id="options">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href=about-us.html>About Us</a></li>
+                <li  id="click"><a href=reviews.html>Reviews</a></li>
+                <li><a href=contact-us.html>Contact</a></li>
+            </ul>
+        </div>
+        <div id="book">
+            <button type="button">Book a Table</button>
+        </div>
+    </nav>
+    <div class="page">
+        <div class="text">
+            <h3>Our Happy Customers!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="box" id="box1">
+            <img class="person" src="/Pictures/person1.jpg">
+            <img class="stars" src="Pictures/stars.png">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi inventore officiis hic nam accusantium doloribus, quibusdam minima porro facere labore?</p>
+            <h4>Name Surname</h4>
+        </div>
+        <div class="box" id="box2">
+            <img class="person" src="/Pictures/person2.jpg">
+            <img class="stars" src="Pictures/stars.png">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi inventore officiis hic nam accusantium doloribus, quibusdam minima porro facere labore?</p>
+            <h4>Name Surname</h4>
+        </div>
+        <div class="box" id="box3">
+            <img class="person" src="/Pictures/person3.jpg">
+            <img class="stars" src="Pictures/stars.png">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi inventore officiis hic nam accusantium doloribus, quibusdam minima porro facere labore?</p>
+            <h4>Name Surname</h4>
+        </div>
+    </div>
 </body>
 </html>

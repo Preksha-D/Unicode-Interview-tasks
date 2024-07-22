@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
+    <title>Restaurant UI</title>
+    <link rel="icon" href="Pictures/pizza-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="about.css" />
+<link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-    <p>about us</p>
+    <nav class="header">
+        <div id=name>
+            <img src="Pictures/pizza-logo.png">
+            <h3>Restaurant</h3>
+        </div>
+        <div id="options">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li id="click"><a href=about-us.html>About Us</a></li>
+                <li><a href=reviews.html>Reviews</a></li>
+                <li><a href=contact-us.html>Contact</a></li>
+            </ul>
+        </div>
+        <div id="book">
+            <button type="button">Book a Table</button>
+        </div>
+    </nav>
+    <div class="page">
+        <div class="text">
+            <h3>Meet Our Team!</h3>
+            <p>Lorem ipsum, dolor sit amet consectet adipisicing elit. Sed officiis unde reiciendis.</p>
+            <div class="points">
+                <ul class="list" id="list1">
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                </ul>
+                <ul class="list">
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                </ul>
+            </div>
+            <div class="btn">
+                <div id="menu-button">
+                    <a href="index.html#menu">
+                        <button type="button">Menu</button> 
+                    </a>
+                </div>
+                <div id="book1">
+                    <button type="button">Book a Table</button>
+                </div>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="Pictures/poof.jpg">
+        </div>
+    </div>
 </body>
 </html>

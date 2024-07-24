@@ -121,6 +121,7 @@
     margin: 5% 0 0 18%;
     align-items: center;
     border-radius: 30px 13px 30px 13px;
+    box-shadow: 5px 5px 5px #5E7797;
 }
 @media only screen and (max-width: 1000px){
     .points{
@@ -148,11 +149,16 @@
 @media only screen and (max-width: 767px){
     
     .text h3{
+        padding-top: 30vh;
         padding-left: 8vw;
         width:100%;
     }
     .list, #list1, .text p, .btn{
         padding-left: 8vw;
+    }
+    .photo img{
+        width: 250px;
+        height:370px;
     }
 }
 

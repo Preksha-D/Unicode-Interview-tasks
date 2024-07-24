@@ -1,0 +1,260 @@
+.page{
+    width: 100%;
+    height: fit-content;
+    margin:0;
+    padding: 100px 0 0 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Merriweather", serif;
+}
+.page h3{
+    font-size: 25px;
+    text-align: center;
+}
+.boxes{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+.box{
+    width: 350px;
+    height: 500px;
+    display: flex;
+    margin: 2dvw;
+    margin-left: 20dw;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 5px;
+}
+.box h4{
+    font-size: 20px;
+    padding: 20px;
+}
+input{
+    width: 350px;
+    height: 40px;
+    background-color: rgba(191,201,217,0.3);
+    box-sizing: border-box;
+    color: #5C7399;
+    display: flex;
+    display: block;
+    align-items: center;
+    border-radius: 15px 3px 15px 3px;
+    border-style: none;
+    padding-left: 10px;
+}
+.input-group{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#text{
+    padding:10px;
+}
+#name{
+    position: relative;
+    left:10px;
+}
+.nostars img{
+    width:250px;
+    height:fit-content;
+}
+.nostars{
+    position:relative;
+    bottom:90px;
+    left:30px;
+}
+textarea{
+    width:350px;
+    height: 150px;
+    margin: 0;
+    resize: none;
+    background-color: rgba(191,201,217,0.3);
+    box-sizing: border-box;
+    color: #5C7399;
+    display: flex;
+    display: block;
+    position: relative;
+    bottom: 150px;
+    align-items: center;
+    border-radius: 15px 3px 15px 3px;
+    border: none;
+}
+::placeholder {
+    color: #5C7399;
+    font-size: 10px;
+}
+.submit button {
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    width: 150px;
+    background-color: #fc772f;
+    border-radius: 15px 3px 15px 3px;
+    display: block;
+}
+.submit{
+    position: relative;
+    left:200px;
+    bottom:45px;
+}
+.submit :hover{
+    box-shadow: 5px 5px 5px #5E7797;
+}
+.box2{
+    width: 350px;
+    height: 500px;
+    display: flex;
+    margin-top: 2dvw;
+    margin-left: 10vw;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 5px;
+    /* background-color: rgba(25, 93, 204, 0.3); Add a background color to see the boxes */
+}
+
+.box2 h4{
+    font-size: 20px;
+    padding: 25px;
+}
+.address , .phone, .mail{
+    position: absolute;
+    height: fit-content;
+}
+.address img{
+    width:80px;
+    height:70px; 
+    position: relative;
+    right:70px;
+    top:70px;
+}
+.address h5{
+    font-size: 15px;
+    position: relative;
+    height: fit-content;
+    left:10px;
+    top:13px;
+}
+.address p{
+    font-size: 9px;
+    font-weight: 300;
+    position: relative;
+    height: fit-content;
+    top:18px;
+    left:10px;
+
+}
+.phone img{
+    width:55px;
+    height:55px; 
+    position: relative;
+    right:96px;
+    top:150px;
+}
+.phone h5{
+    font-size: 15px;
+    position: relative;
+    height: fit-content;
+    right:20px;
+    top:103px;
+}
+.phone p{
+    font-size: 9px;
+    font-weight: 300;
+    position: relative;
+    height: fit-content;
+    right:20px;
+    top:106px;
+}
+.mail img{
+    width:70px;
+    height:60px; 
+    position: relative;
+    right:110px;
+    top:229px;
+}
+.mail h5{
+    font-size: 15px;
+    position: relative;
+    height: fit-content;
+    right:25px;
+    top:183px;
+}
+.mail p{
+    font-size: 9px;
+    font-weight: 300;
+    position: relative;
+    height: fit-content;
+    right:25px;
+    top:186px;
+}
+hr.line {
+    border-top: 300px solid #5C7399;
+    border-radius: 5px;
+    rotate: -90deg;
+    position: relative;
+    top:100px;
+    left:10px;
+} 
+.follow h5{
+    font-size: 15px;
+    height: fit-content;
+    position: relative;
+    right:30px;
+    bottom: 20px;
+}
+.fb{
+    position: relative;
+    width:65px;
+    height:65px; 
+    bottom: 20px;
+}
+.ig{
+    width:60px;
+    position: relative;
+    height:60px; 
+    bottom: 22px;
+    right:10px; 
+}
+.x{
+    position: relative;
+    width:75px;
+    height:65px; 
+    bottom: 20px;
+    right:20px;
+}
+@media only screen and (min-height: 890px){
+    .page{
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        padding-top: 200px;
+    }
+    .text p{
+        padding-bottom: 90px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .box2{
+        margin-left: 3vw;
+    }
+    .page{
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 767px){
+    .page{
+        padding-top: 300px;
+    }
+}

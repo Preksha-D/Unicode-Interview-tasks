@@ -1,0 +1,166 @@
+body{
+    background-color: #CAF0F8;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Merriweather", serif;
+    /* overflow: hidden; */
+}
+.search{
+    padding: 60px;
+    input{
+        width: 400px; 
+        height: 35px;
+        border-radius: 15px;
+        border-style: none;
+        padding-left: 15px;
+    }
+    input:focus{
+        outline: none;
+    }
+    ::placeholder{
+        color: #0077B6;   
+    }
+    button{
+        background-color: #ffffff;
+        border-style: none;
+        position: relative;
+        top:10px;
+        right:60px;
+        img{
+            width:30px;
+            height: 30px;
+        }
+    }
+}
+
+.stuff{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    .fav{
+        width: 20%;
+        background-color: bisque;
+        margin-left: 100px;
+    }
+    .data{
+        width:700px;
+        background-color: rgba(173, 232, 244, 0.6);
+        display: flex;
+        flex-direction: row;
+        height: 450px;
+        margin-right: 250px;;
+        .main{
+            color: white;
+            position: relative;
+            .photo{
+                height: 450px;
+                width: 350px;
+            }
+            p{
+                position:relative;
+                bottom:450px;
+                padding-left: 30px;
+                margin: 6px;
+            }
+            .temp{
+                font-size: 55px;
+                margin-top: 30px;
+            }
+            .city{
+                font-size: 20px;
+            }
+        }
+        .extra{
+            width: 350px;
+            color: #03045E;
+            .date{
+                font-size: 25px;
+                font-weight: lighter;
+                position: relative;
+                left:230px;
+            }
+            .day{
+                font-size: 15px;
+                font-weight: lighter;
+                position: relative;
+                left:220px;
+                bottom:20px;
+            }
+            .weather{
+                font-size: 30px;
+                font-weight: 500;
+                position: relative;
+                left:80px;
+            }
+            p{
+                position: relative;
+                left:80px;
+                bottom: 20px;
+                font-size: 15px;
+            }
+            .wind{
+                color: #023E8A;
+                position: relative;
+                bottom:30px;
+                img{
+                    position: relative;
+                    width:70px;
+                    left:50px;
+                    top:30px;
+                }
+                h3{
+                    position: relative;
+                    font-weight: 500;
+                    bottom:30px;
+                    left:120px;
+                    font-size: 15px;
+                }
+                h4{
+                    position: relative;
+                    font-weight: 100;
+                    font-size: 12px;
+                    bottom:45px;
+                    left:130px;
+                }
+            }
+            .humid{
+                color: #023E8A;
+                position: relative;
+                bottom:100px;
+
+                img{
+                    position: relative;
+                    width:70px;
+                    left:50px;
+                    top:30px;
+                }
+                h3{
+                    position: relative;
+                    font-weight: 500;
+                    bottom:30px;
+                    left:120px;
+                    font-size: 15px;
+                }
+                h4{
+                    position: relative;
+                    font-weight: 100;
+                    font-size: 12px;
+                    bottom:45px;
+                    left:140px;
+                }
+            }
+            .unit{
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                bottom:100px;
+                left:200px;
+            }
+        }
+        
+    }
+}

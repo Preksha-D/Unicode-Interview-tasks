@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF9F1;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 1000px;
+}
+.decor{
+    height:200px;
+    width:100%;
+    background: rgba(44, 109, 107, 0.5);
+    background-image: url("Pictures/bg.jpeg");
+    background-size: 100% auto;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size:80px;
+        color: white;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.9);
+        font-family: "Prata", serif;
+    }
+}
+.decor.active{
+    filter: blur(20px);
+}
+.rest{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* transform: filter 200ms ease-in;
+    filter: blur(0px);
+    opacity: 1; */
+    .card{
+        display: flex;
+        flex-direction: row;
+        transition: 200ms scale ease-in-out;
+        margin:100px;
+        width: 300px;
+        height:250px;
+        border-radius: 25px;
+        box-shadow: 8px 8px 8px rgba(174, 160, 143, 10);
+        /* transition: 1s; */
+        .pic{
+            position: relative;
+            .ribbon{
+                width: 120px;
+                position: relative;
+                --f: 15px;
+                color: white;
+                font-size: 12px;
+                padding: 3px;
+                text-align: center;
+                background: #2C6D6A;
+                border-bottom: var(--f) solid #0007;
+                clip-path: polygon(100% calc(100% - var(--f)),100% 100%,calc(100% - var(--f)) calc(100% - var(--f)),var(--f) calc(100% - var(--f)), 0 100%,0 calc(100% - var(--f)),999px calc(100% - var(--f) - 999px),calc(100% - 999px) calc(100% - var(--f) - 999px));
+                rotate: -45deg;
+                bottom:240px;
+                right: 30px;
+                font-family: "Libre Baskerville", serif;
+            }
+            img{
+                width:150px;
+                height:250px;
+                border-radius: 25px 0 0 25px ;
+            }
+        }
+        .details{
+            width:150px;
+            height:250px;
+            background-color: #FEEFDD;
+            border-radius: 0 25px 25px 0;
+            display: flex;
+            flex-direction: column;
+            color: #2C6D6A;
+            font-size: 12px;
+            h3{
+                text-align: center;
+                font-size: 17px;
+                font-weight: 800;
+                margin: 7px;
+                margin-bottom: 0;
+                font-family: "Prata", serif;
+            }
+            .time{
+                text-align: center;
+                margin: 10px;
+            }
+            .location{
+                text-align: center;
+                margin: 10px;
+            }
+            .more{
+                width:80px;
+                align-self: center;
+                color: #ffffff;
+                background-color: #2C6D6A;
+                border-style: none;
+                padding:5px;
+                border-radius: 50px;
+                margin: 12px;
+                font-family: "Libre Baskerville", serif;
+            }
+        }
+    }
+    .card:hover{
+        box-shadow: 16px 16px 16px rgba(174, 160, 143, 20);
+        scale: 1.05;
+        
+    }
+}
+.rest.active{
+    filter: blur(20px);
+    opacity: 0.8;
+    transform: filter 200ms ease-in;
+}
+.event{
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    visibility: hidden;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    /* transition: 200ms visibility ease-in; */
+    img{
+        width:350px;
+        height: 450px;
+        border-radius: 25px 0 0 25px;
+    }
+    .right{
+        width:350px;
+        height: 450px;
+        background-color: #FEEFDD;
+        border-radius: 0 25px 25px 0;
+        display: flex;
+        flex-direction: column;
+        color: #2C6D6A;
+        h3{
+            text-align: center;
+            font-size: 30px;
+            font-weight: 800;
+            margin: 15px;
+            font-family: "Prata", serif;
+        }
+        .describe{
+            font-size: 13px;
+            text-align: center;
+            margin: 15px;
+        }
+        .time1, .date1, .tics, .location1, .price{
+            text-align: center;
+            font-size: 12px;
+            margin: 10px;
+        }
+        .more1{
+            width:150px;
+            height:30px;
+            align-self: center;
+            color: #ffffff;
+            background-color: #2C6D6A;
+            border-style: none;
+            padding:5px;
+            border-radius: 50px;
+            font-size: 12px;
+            margin-top: 15px;
+            font-family: "Libre Baskerville", serif;
+        }
+        i{
+            position: relative;
+            width:30px;
+            height: 30px;
+            top:25px;
+            left:310px;
+        }
+    }
+}

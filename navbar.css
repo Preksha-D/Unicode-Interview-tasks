@@ -123,6 +123,7 @@ html{
         justify-content: center;
         margin: 10px 0;
         flex:2;
+        transform: scale(0.9);
     }
     #options ul{
         justify-content: center;

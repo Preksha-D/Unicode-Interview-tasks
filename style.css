@@ -51,7 +51,7 @@
     padding-left: 10dvw;
     padding-top: 3dvh;
     width: fit-content;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
 }
 #menu-button button {
@@ -86,24 +86,26 @@
     box-shadow: 5px 5px 5px #5E7797;
     
 }
-.follow{
+.follow1{
     padding-left: 10dvw;
     padding-top: 3dvh;
+    display: flex;
+    flex-wrap: nowrap;
 }
-.fb{
+.fb1{
     position: relative;
     width:65px;
     height:65px; 
     bottom: 20px;
 }
-.ig{
+.ig1{
     width:60px;
     position: relative;
     height:60px; 
-    bottom: 22px;
+    bottom: 17px;
     right:10px; 
 }
-.x{
+.x1{
     position: relative;
     width:75px;
     height:65px; 
@@ -343,6 +345,7 @@
     display: flex;
     flex-direction: row;
     padding-top: 0dvh;
+    margin-bottom: 50px;
     height: 100vh;
     align-items: center;
 }
@@ -503,14 +506,17 @@ input{
     box-shadow: 5px 5px 5px #000000;
 }
 .part2 {
-    /* background-color: #b2e0b9; */
     width: 100%;
     height: 250px;
-    margin-top: 50px;
+    margin-top: 200px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.dd{
+    display: flex;
+    flex-direction: column;
 }
 #name1{
     display: flex;
@@ -520,13 +526,61 @@ input{
 #name1 h3 {
     color: black;
     margin-left: 15px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #name1 img {
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     padding: 5px 3px;
+}
+.p{
+    width: 400px;
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    text-align: left;
+    align-self: flex-start;
+    margin: 0;
+    line-height: 25px;
+}
+.learn{
+    font-weight: 1000;
+    text-decoration: underline;
+}
+.time{
+    padding: 30px;
+}
+.time h3{
+    font-size: 15px;
+}
+.time p{
+    font-size: 12px;
+    line-height: 22px;
+}
+.ft-menu, .nav{
+    padding: 30px;
+}
+.ft-menu ul, .nav ul{
+    list-style-type: none;
+    
+}
+.ft-menu ul li, .nav ul li{
+    font-size: 12px;
+    line-height: 22px;
+}
+.ft-menu h5, .nav h5{
+    font-size: 15px;
+}
+.nav ul a{
+    text-decoration: none;
+    color: #000000;
+}
+.follow{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 }
 .follow h5{
     font-size: 15px;
@@ -539,21 +593,22 @@ input{
     position: relative;
     width:65px;
     height:65px; 
-    bottom: 20px;
+    top:15px;
+    right:70px;
 }
 .ig{
     width:60px;
     position: relative;
     height:60px; 
-    bottom: 22px;
-    right:10px; 
+    top:17px;
+    right:80px; 
 }
 .x{
     position: relative;
     width:75px;
     height:65px; 
-    bottom: 20px;
-    right:20px;
+    top:15px;
+    right:90px;
 }
 @media only screen and (max-width: 1000px){
     .home {
@@ -566,27 +621,125 @@ input{
     .menu{
         height: auto;
     }
+    .part1{
+        width: 90%;
+        h4{
+            width:90%;
+            font-size: 20px;
+        }
+    }
+    input{
+        width:100%;
+    }
+    .part2{
+        scale: 0.6;
+    }
 }
 
 @media only screen and (max-width: 767px){
     .home {
-        height:100dvh;
-        width: 100%;
-        flex-direction: column;
-        padding-bottom: 20%;
-        justify-content: center;
-        align-items: flex-start;
+        height:100vh;
+        width: 100vw;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
     }
     #intro{
-        align-items: flex-start;
+        margin-left: 10px;
+        padding-left: 0px;
+        /* transform: scale(0.7); */
+        
+        padding-right: 0;
+        width:40%;
     }
     #intro h1 {
-        font-size: 30px;
+        font-size: 20px;
+        width: 100%;
+        padding-left: 0;
+    }
+    #intro p{
+        width: 100%;
+        font-size: 10px;
+        padding-left: 0;
+    }
+    .btn{
+        width: 100%;
+        padding-left: 0;
+        transform: scale(0.7);
+        flex-grow:2;
+    }
+    .follow{
+        width: 100%;
+        padding-left: 0;
+        transform: scale(0.8);
+        right:100px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .pics{
+        /* transform: scale(0.5); */
+        justify-content: flex-start;
+        padding-left: 0;
+        position: relative;
+        right:50px;
+    }
+    .a{
+        transform: scale(0.5);
+        right:70px;
+    }
+    .menu{
+        height: fit-content;
+        justify-content: flex-start;
+    }
+    #menu-heading{
+        transform: scale(0.8);
+        p, h1{  
+            width:100vw;
+            text-align: center;
+        }
+    }
+    .menu1{
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: fit-content;
+        width: 100vw;
+    }
+    .dishes{
+        display: grid;
+        width: 100vw;
+    }
+    #dish1,#dish2,#dish3,#dish4,#dish5{
+        padding-top: 30px;
+        scale: 0.95;
+    }
+    .pics2{
+        scale: 0.5;
+    }
+    #fire{
+        right:50px;
+    }
+    #wlc{
+        justify-content: flex-end;
+        
+        h1{
+            width:100%;
+            font-size: 20px;
+            float: right;
+        }
+        p{
+            width:100%;
+            font-size: 15px;
+        }
+    }
+    .btn2{
+        width: 100%;
+        padding-left: 0;
+        transform: scale(0.7);
+        flex-grow:2;
     }
 }
 @media only screen and (min-height: 720px){
     .home, .menu1,.menu2{
-        height: 100vh;
         justify-content: center;
         align-items: center;
         padding-top: 200px;

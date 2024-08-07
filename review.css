@@ -1,5 +1,5 @@
 .page{
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     margin:0;
     padding: 100px 0 0 0;
@@ -76,5 +76,10 @@
     }
     .text p{
         padding-bottom: 90px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .page{
+        padding-top: 200px;
     }
 }

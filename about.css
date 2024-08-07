@@ -10,7 +10,7 @@
     align-items: center;
 }
 .text{
-    padding: 5% 0;
+    padding: 20vh 5% 5% 5%; 
     display:flex;
     flex-direction: column;
     justify-self: center;
@@ -64,6 +64,7 @@
     width: 30px;
     height: 30px;
     background-image: url('Pictures/tick.png');
+    background-repeat: no-repeat;
     background-size: contain;
     transform: translateY(-70%);
 }
@@ -123,43 +124,56 @@
     border-radius: 30px 13px 30px 13px;
     box-shadow: 5px 5px 5px #5E7797;
 }
-@media only screen and (max-width: 1000px){
-    .points{
+@media only screen and (max-width: 1000px) {
+    .points {
         flex-wrap: wrap;
     }
-    .list, #list1, .text p, .btn{
+    .list, #list1, .text p, .btn {
         padding-left: 10vw;
     }
-    .text h3{
+    .text h3 {
         padding-left: 10vw;
         font-size: 35px;
         flex-wrap: wrap;
     }
-    .page{
+    .page {
         padding-top: 20%;
         justify-content: space-between;
         content: box;
         overflow: scroll;
     }
-    .photo img{
+    .photo img {
         margin: 0 auto;
         display: block;
     }
 }
-@media only screen and (max-width: 767px){
-    
-    .text h3{
+
+@media only screen and (max-width: 767px) {
+    .page {
+        padding-top: 400px;
+    }
+    .text h3 {
         padding-top: 30vh;
         padding-left: 8vw;
-        width:100%;
+        width: 100%;
     }
-    .list, #list1, .text p, .btn{
+    .list, #list1, .text p, .btn {
         padding-left: 8vw;
     }
-    .photo img{
+    .photo img {
         width: 250px;
-        height:370px;
+        height: 370px;
+    }
+
+    .text {
+        padding-top: 100px;
     }
 }
 
-    
+@media only screen and (min-height: 890px) {
+    .page {
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+}  

@@ -18,16 +18,18 @@
     <div class="stuff">
         <div class="fav">
             <p> Favourite Cities</p>
+            <div class="favdata">
+            </div>
         </div>
         <div class="data">
             <div class="main">
-                <img class="photo" src ="Pictures/mist.jpg">
-                <p class="temp">25°C</p>
-                <p class="city">City Name</p>
+                <img class="photo" src ="Pictures/ask.jpg">
+                <p class="temp"></p>
+                <p class="city"></p>
             </div>
             <div class="extra">
-                <h3 class="date">24 Jul</h3>
-                <h4 class="day">Wednesday</h4>
+                <h3 class="date" id="date">24 Jul</h3>
+                <h4 class="day" id="day">Wednesday</h4>
                 <h3 class="weather">Clear</h3>
                 <p class="feels">Feels like 32°C</p>
                 <div class="wind">
@@ -42,9 +44,17 @@
                 </div>
                 <div class="unit">
                     <button class="c"><p>°C</p></button>
-                    <p>|</p>
+                    <h3>|</h3>
                     <button class="f"><p>°F</p></button>
                 </div>
+                <button class="heart"><img id="like" src="Pictures/noheart.png"></button>
+            </div>
+            <div class="wlc">
+                <h2>Search to find the temperature of a city</h2>
+            </div>
+            <div class="uhoh">
+                <h2>UH OH!</h2>
+                <h3>Enter a city that exists &lt;3 </h3>
             </div>
         </div>
     </div>

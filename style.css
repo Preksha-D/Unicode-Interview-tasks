@@ -5,7 +5,7 @@ body{
     flex-direction: column;
     align-items: center;
     font-family: "Merriweather", serif;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .search{
     padding: 60px;
@@ -20,7 +20,8 @@ body{
         outline: none;
     }
     ::placeholder{
-        color: #0077B6;   
+        color: #0077B6; 
+        font-size: 15px;;  
     }
     button{
         background-color: #ffffff;
@@ -43,8 +44,33 @@ body{
     margin-top: 20px;
     .fav{
         width: 20%;
-        background-color: bisque;
+        /* background-color: bisque; */
         margin-left: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            font-size: 20px;
+            color: #03045E;
+            width:200px;
+        }
+        .favdata{
+            width: 100%;
+            color: #023E8A;
+            margin-bottom: 20px;
+            h2{
+                background-color: rgba(173, 232, 244, 0.6);
+                font-size: 15px;
+                text-align: center;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            h2:hover{
+                cursor: default;
+            }
+        }
     }
     .data{
         width:700px;
@@ -75,6 +101,7 @@ body{
             }
         }
         .extra{
+            display: none;
             width: 350px;
             color: #03045E;
             .date{
@@ -82,6 +109,7 @@ body{
                 font-weight: lighter;
                 position: relative;
                 left:230px;
+                white-space: pre;
             }
             .day{
                 font-size: 15px;
@@ -89,6 +117,7 @@ body{
                 position: relative;
                 left:220px;
                 bottom:20px;
+                white-space: pre;
             }
             .weather{
                 font-size: 30px;
@@ -158,9 +187,73 @@ body{
                 flex-direction: row;
                 position: relative;
                 bottom:100px;
-                left:200px;
+                left:150px;
+                .c , .f {
+                    background: none;
+                    border-style: none;
+                }
+                .c p{
+                    font-size: 25px;
+                    font-weight: 500;
+                }
+                .f p{
+                    font-size: 15px;
+                    font-weight: 200;
+                }
+                h3{
+                    position: relative;
+                    left:80px;
+                    bottom: 10px;
+                    font-size: 20px;
+                }
+            }
+            .heart{
+                background: none;
+                border-style: none;
+                width:40px;
+                height: 40px;
+                padding: 0;
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: relative;
+                bottom:185px;
+                left:30px;
+                img{
+                    width: 40px;
+                    height: 35px;
+                    bottom:185px;
+                    left:230px;
+                }
+            }
+            .heart:hover{
+                background-image: url("Pictures/heart.png");
+            }
+            /* .heart::after{
+                background-image: url("Pictures/heart.png");
+            } */
+        }
+        .wlc{
+            width: 350px;
+            color: #03045E;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h2{
+                width:200px;
+                font-size: 30px;
+                text-align: center;
+                font-weight: 500;
             }
         }
-        
+        .uhoh{
+            display: none;
+            width: 350px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h3, h2{
+                color: #03045E;
+            }
+        }
     }
 }
